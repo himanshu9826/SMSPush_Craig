@@ -18,11 +18,11 @@ namespace SMS.Creator.Sync.API.Controllers
 {
     public class SMSController : ApiController
     {
-       /// <summary>
-       /// Method to POST SMS
-       /// </summary>
-       /// <param name="SMS"></param>
-       /// <returns></returns>
+        /// <summary>
+        /// Method to POST SMS
+        /// </summary>
+        /// <param name="SMS"></param>
+        /// <returns></returns>
         // POST api/values
         [HttpPost]
         public string Post(string SMS)
@@ -37,15 +37,15 @@ namespace SMS.Creator.Sync.API.Controllers
                     SMS = SMS
                 };
                 rootObj.data = obj;
-                 IRestResponse =ZohoServiceCall.Rest_InvokeZohoInvoiceServiceForPlainText(ZohoAPIUrlConstant.PostSMS,Method.POST, rootObj);
+                IRestResponse = ZohoServiceCall.Rest_InvokeZohoInvoiceServiceForPlainText(ZohoAPIUrlConstant.PostSMS, Method.POST, rootObj);
                 if (IRestResponse != null)
                 {
-                       var responseString = IRestResponse.Content;
-                      if (IRestResponse.StatusCode == HttpStatusCode.OK)
+                    var responseString = IRestResponse.Content;
+                    if (IRestResponse.StatusCode == HttpStatusCode.OK)
                     {
                     }
-                  }
-             }
+                }
+            }
             catch (Exception ex)
             {
                 LibLogging.WriteErrorToDB("SMS", "Post", ex);
@@ -54,7 +54,7 @@ namespace SMS.Creator.Sync.API.Controllers
 
             return IRestResponse.Content;
         }
-  
-      
+
+
     }
 }
