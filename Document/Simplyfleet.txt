@@ -1,0 +1,62 @@
+Scope: ZohoCreator.form.CREATE,ZohoCreator.report.CREATE,ZohoCreator.report.READ,ZohoCreator.report.UPDATE,ZohoCreator.meta.form.READ,ZohoCreator.meta.application.READ,ZohoCreator.dashboard.READ
+
+clientid: 1000.NFNX7TSXMHNHL5H3XU37LK1EU1TZOM
+
+secretid: 74916203232519a1001e4c9daaaadbbe86182a1721
+
+code: 1000.ebd8663c5cc9bb3e460d804bdc7ec164.296a4e70bbde66f1cf5c06f47f7e47a0
+
+
+https://accounts.zoho.com/oauth/v2/token?grant_type=authorization_code&client_id=1000.NFNX7TSXMHNHL5H3XU37LK1EU1TZOM&client_secret=74916203232519a1001e4c9daaaadbbe86182a1721&redirect_uri=https://creatorapp.zoho.com/simplyfleet&code=1000.ebd8663c5cc9bb3e460d804bdc7ec164.296a4e70bbde66f1cf5c06f47f7e47a0
+
+{
+    "access_token": "1000.a982d4dff37e1ebadb9e4791e364cd79.ebfa5170e3406d05f14d624ed91d004f",
+    "refresh_token": "1000.9a62825a8c3aadd8b57024f1ee025b0d.3a009805565079532510631249bcc7f1",
+    "api_domain": "https://www.zohoapis.com",
+    "token_type": "Bearer",
+    "expires_in": 3600
+}
+
+
+URL to generate the access token
+https://accounts.zoho.com/oauth/v2/token?refresh_token=1000.9a62825a8c3aadd8b57024f1ee025b0d.3a009805565079532510631249bcc7f1&client_id=1000.NFNX7TSXMHNHL5H3XU37LK1EU1TZOM&client_secret=74916203232519a1001e4c9daaaadbbe86182a1721&grant_type=refresh_token
+
+{
+    "access_token": "1000.a273c26e5bf3ecfb73255e60d6da9df7.785e3c80d5b40392b7be73210e178f81",
+    "api_domain": "https://www.zohoapis.com",
+    "token_type": "Bearer",
+    "expires_in": 3600
+}
+
+https://creatorapp.zoho.com/simplyfleet/simplyfleet/#Form:SMS
+
+Get
+https://creatorapp.zoho.com/api/v2/simplyfleet/simplyfleet/report/SF_SMS
+
+Post
+https://creatorapp.zoho.com/api/v2/simplyfleet/simplyfleet/form/SMS
+{
+            "SMS_subject": null,
+            "Status_of_Transaction": null
+            "Owner": {
+                "display_value": "   Advanced FST Janine Fleet Manager  ",
+                "ID": "3849498000000367717"
+            },
+            "Petrol_Service_Provider": "",
+            "Current_Odometer": "",
+            "SMS_Rand_Value": null,
+            "SMS_Operation_Date_Time": null,
+            "Assigned_Driver": null,
+            "SMS_Date_Received_by_App": null,
+            "Type": "",
+            "Previous_Odo_Reading": "",
+            "SMS": "A purchase has been approved on Fleet Card ..3336 (Reg No.: FV50HHG1 ) at SAKSHI TEST for R1 131.55 on 2021-06-07 at 07:59:15. For enquiries/to opt-out please call 0860 106 249/+27 11 5471000. Standard Bank Fleet Management",
+            "Added_User": "fleetmanager",
+            "ID": null,
+            "SMS_Registration_Number": null,
+            "Manual_Transaction": ""
+        }
+
+
+Himanshu, 16:45
+https://creatorapp.zoho.com/simplyfleet/simplyfleet#Report:SF_SMS

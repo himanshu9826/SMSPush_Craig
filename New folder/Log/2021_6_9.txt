@@ -1,0 +1,6 @@
+Methodl: Post | Source: SMS | Message :"A purchase has been approved on Fleet Card ..500(Reg No.:9FV50HHG109 ) at SAKSHI Completed for R1 90.55 on 2021-06-09 at 17:59:15. For enquiries/to opt-out please call 0860 106 249/ 27 11 5471000. Standard Bank Fleet Management"<br/>
+StackTrace :"A purchase has been approved on Fleet Card ..500(Reg No.:9FV50HHG109 ) at SAKSHI Completed for R1 90.55 on 2021-06-09 at 17:59:15. For enquiries/to opt-out please call 0860 106 249/ 27 11 5471000. Standard Bank Fleet Management"
+Date :09-06-2021 07:01:08
+
+-----------------------------------------------------------------------------
+
